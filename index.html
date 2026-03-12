@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rajendra Agencies Satara | Lab Chemicals & Scientific Supplies Distributor</title>
-  <meta name="description" content="Rajendra Agencies, Satara — One-stop supplier for lab chemicals, pharma products & scientific instruments across Maharashtra. Call 094238 63434.">
-  <meta name="keywords" content="lab chemicals Satara, chemical distributor Satara, scientific instruments Maharashtra, pharma distributor Satara, Rajendra Agencies">
-  <meta property="og:title" content="Rajendra Agencies Satara | Lab Chemicals & Scientific Supplies">
+  <title>Rajendra Agencies | Lab Chemicals & Scientific Supplies Maharashtra</title>
+  <meta name="description" content="Rajendra Agencies — One-stop supplier for lab chemicals, pharma products & scientific instruments across Maharashtra. Call 094238 63434.">
+  <meta name="keywords" content="lab chemicals Maharashtra, chemical distributor, scientific instruments, pharma distributor, Rajendra Agencies">
+  <meta property="og:title" content="Rajendra Agencies | Lab Chemicals & Scientific Supplies">
   <meta property="og:description" content="One-stop supplier for lab chemicals, pharma products & scientific instruments across Maharashtra.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
@@ -23,7 +23,7 @@
       <div class="logo-mark">RA</div>
       <div class="logo-info">
         <span class="logo-name">Rajendra Agencies</span>
-        <span class="logo-tagline">Satara, Maharashtra</span>
+        <span class="logo-tagline">Maharashtra</span>
       </div>
     </div>
     <ul class="nav-links">
@@ -57,8 +57,8 @@
   <div class="hero-grid-lines"></div>
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-eyebrow"><i class="fas fa-circle-dot"></i> Satara's Trusted Lab Supplier</div>
-      <h1>Your One-Stop Solution for <span class="highlight">Lab Chemicals</span> & Scientific Supplies</h1>
+      <div class="hero-eyebrow"><i class="fas fa-circle-dot"></i> Maharashtra's Trusted Lab Supplier</div>
+      <h1>Your One-Stop Solution for <span class="highlight">Lab Chemicals</span> &amp; Scientific Supplies</h1>
       <p class="hero-desc">Serving hospitals, pharmaceutical companies, research institutions and educational labs across Maharashtra — huge supply, professional staff, all under one roof.</p>
       <div class="hero-actions">
         <a href="products.html" class="btn-hero-primary"><i class="fas fa-th-large"></i> Browse Products</a>
@@ -72,26 +72,26 @@
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-card">
+      <a href="products.html#chemicals" class="hero-card">
         <div class="hero-card-icon"><i class="fas fa-flask"></i></div>
         <div class="hero-card-info"><h4>Lab Chemicals</h4><p>AR · LR · HPLC Grade</p></div>
         <i class="fas fa-chevron-right hero-card-arrow"></i>
-      </div>
-      <div class="hero-card">
+      </a>
+      <a href="products.html#pharma" class="hero-card">
         <div class="hero-card-icon"><i class="fas fa-pills"></i></div>
         <div class="hero-card-info"><h4>Pharma Products</h4><p>APIs · Excipients · Standards</p></div>
         <i class="fas fa-chevron-right hero-card-arrow"></i>
-      </div>
-      <div class="hero-card">
+      </a>
+      <a href="products.html#instruments" class="hero-card">
         <div class="hero-card-icon"><i class="fas fa-microscope"></i></div>
         <div class="hero-card-info"><h4>Scientific Instruments</h4><p>pH Meters · Balances · Spectro</p></div>
         <i class="fas fa-chevron-right hero-card-arrow"></i>
-      </div>
-      <div class="hero-card">
+      </a>
+      <a href="products.html#glassware" class="hero-card">
         <div class="hero-card-icon"><i class="fas fa-vial"></i></div>
-        <div class="hero-card-info"><h4>Glassware & Consumables</h4><p>Borosil · Filters · Plasticware</p></div>
+        <div class="hero-card-info"><h4>Glassware &amp; Consumables</h4><p>Borosil · Filters · Plasticware</p></div>
         <i class="fas fa-chevron-right hero-card-arrow"></i>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -123,12 +123,12 @@
         <div class="why-visual-card">
           <div class="why-visual-icon"><i class="fas fa-certificate"></i></div>
           <h4>Grade Certified</h4>
-          <p>AR, LR, HPLC & Pharma grade</p>
+          <p>AR, LR, HPLC &amp; Pharma grade</p>
         </div>
         <div class="why-visual-card">
           <div class="why-visual-icon"><i class="fas fa-truck-fast"></i></div>
           <h4>Fast Delivery</h4>
-          <p>Prompt supply across Satara</p>
+          <p>Prompt supply across Maharashtra</p>
         </div>
         <div class="why-visual-card">
           <div class="why-visual-icon"><i class="fas fa-headset"></i></div>
@@ -159,7 +159,7 @@
   </div>
 </section>
 
-<!-- PRODUCTS -->
+<!-- PRODUCTS WITH WORKING TABS -->
 <section class="section products-section" style="background:var(--light2);">
   <div class="section-inner">
     <div class="section-header centered">
@@ -167,46 +167,50 @@
       <h2 class="section-title">Comprehensive <span class="accent">Product Range</span></h2>
       <p class="section-sub">From high-purity solvents to precision instruments — we stock everything your lab demands.</p>
     </div>
-    <div class="products-tabs" style="margin-bottom:36px;">
-      <button class="ptab active"><i class="fas fa-th"></i> All</button>
-      <button class="ptab"><i class="fas fa-flask"></i> Chemicals</button>
-      <button class="ptab"><i class="fas fa-pills"></i> Pharma</button>
-      <button class="ptab"><i class="fas fa-microscope"></i> Instruments</button>
-      <button class="ptab"><i class="fas fa-vial"></i> Glassware</button>
+
+    <!-- TABS -->
+    <div class="products-tabs" id="productTabs">
+      <button class="ptab active" data-filter="all"><i class="fas fa-th"></i> All</button>
+      <button class="ptab" data-filter="chemicals"><i class="fas fa-flask"></i> Chemicals</button>
+      <button class="ptab" data-filter="pharma"><i class="fas fa-pills"></i> Pharma</button>
+      <button class="ptab" data-filter="instruments"><i class="fas fa-microscope"></i> Instruments</button>
+      <button class="ptab" data-filter="glassware"><i class="fas fa-vial"></i> Glassware</button>
     </div>
-    <div class="products-grid">
-      <a href="products.html#chemicals" class="product-card">
+
+    <!-- CARDS with data-cat attribute -->
+    <div class="products-grid" id="homeProductGrid">
+      <a href="products.html#chemicals" class="product-card" data-cat="chemicals">
         <span class="product-badge">Popular</span>
         <div class="product-icon-wrap"><i class="fas fa-flask"></i></div>
         <h3>Lab Chemicals</h3>
-        <p>AR, LR, HPLC grade solvents, inorganic & organic chemicals, stains, indicators and buffer solutions.</p>
+        <p>AR, LR, HPLC grade solvents, inorganic &amp; organic chemicals, stains, indicators and buffer solutions.</p>
         <span class="product-link">Explore Range <i class="fas fa-arrow-right"></i></span>
       </a>
-      <a href="products.html#pharma" class="product-card">
+      <a href="products.html#pharma" class="product-card" data-cat="pharma">
         <div class="product-icon-wrap"><i class="fas fa-pills"></i></div>
         <h3>Pharma Products</h3>
         <p>APIs, pharma excipients, reference standards and raw materials for pharmaceutical manufacturing.</p>
         <span class="product-link">Explore Range <i class="fas fa-arrow-right"></i></span>
       </a>
-      <a href="products.html#instruments" class="product-card">
+      <a href="products.html#instruments" class="product-card" data-cat="instruments">
         <div class="product-icon-wrap"><i class="fas fa-microscope"></i></div>
         <h3>Scientific Instruments</h3>
         <p>pH meters, analytical balances, spectrophotometers, microscopes and water purification systems.</p>
         <span class="product-link">Explore Range <i class="fas fa-arrow-right"></i></span>
       </a>
-      <a href="products.html#glassware" class="product-card">
+      <a href="products.html#glassware" class="product-card" data-cat="glassware">
         <div class="product-icon-wrap"><i class="fas fa-vial"></i></div>
         <h3>Lab Glassware</h3>
         <p>Borosilicate beakers, flasks, burettes, pipettes and specialty glassware from Borosil and more.</p>
         <span class="product-link">Explore Range <i class="fas fa-arrow-right"></i></span>
       </a>
-      <a href="products.html#consumables" class="product-card">
+      <a href="products.html#consumables" class="product-card" data-cat="glassware">
         <div class="product-icon-wrap"><i class="fas fa-box-open"></i></div>
-        <h3>Consumables & Plasticware</h3>
+        <h3>Consumables &amp; Plasticware</h3>
         <p>Gloves, filter papers, centrifuge tubes, pipette tips, petri dishes and daily lab consumables.</p>
         <span class="product-link">Explore Range <i class="fas fa-arrow-right"></i></span>
       </a>
-      <a href="contact.html#enquiry" class="product-card">
+      <a href="contact.html#enquiry" class="product-card" data-cat="all">
         <span class="product-badge">Custom</span>
         <div class="product-icon-wrap"><i class="fas fa-cubes"></i></div>
         <h3>Bulk / Custom Orders</h3>
@@ -251,39 +255,39 @@
     <div class="testi-grid">
       <div class="testi-card">
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="testi-text">"One stop solution for all kinds of lab chemicals. They have everything you need and the staff is very helpful and knowledgeable."</p>
+        <p class="testi-text">&ldquo;One stop solution for all kinds of lab chemicals. They have everything you need and the staff is very helpful and knowledgeable.&rdquo;</p>
         <div class="testi-divider"></div>
         <div class="testi-author">
           <div class="avatar">S</div>
           <div class="author-meta">
             <div class="name">Sagar Deshpande</div>
-            <div class="role">Satara · 7 months ago</div>
+            <div class="role">Maharashtra &middot; 7 months ago</div>
             <div class="google-badge"><i class="fab fa-google" style="color:#4285F4"></i> Google Review</div>
           </div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="testi-text">"Good service. Professional staff. Huge supply under one roof. Highly recommend for any lab chemical or scientific requirement."</p>
+        <p class="testi-text">&ldquo;Good service. Professional staff. Huge supply under one roof. Highly recommend for any lab chemical or scientific requirement.&rdquo;</p>
         <div class="testi-divider"></div>
         <div class="testi-author">
           <div class="avatar">A</div>
           <div class="author-meta">
             <div class="name">Anil Naik</div>
-            <div class="role">Local Guide · 18 reviews</div>
+            <div class="role">Local Guide &middot; 18 reviews</div>
             <div class="google-badge"><i class="fab fa-google" style="color:#4285F4"></i> Google Review</div>
           </div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-        <p class="testi-text">"Excellent pharma distribution company. Wide range of products at competitive prices. A reliable partner for our lab."</p>
+        <p class="testi-text">&ldquo;Excellent pharma distribution company. Wide range of products at competitive prices. A reliable partner for our lab.&rdquo;</p>
         <div class="testi-divider"></div>
         <div class="testi-author">
           <div class="avatar">V</div>
           <div class="author-meta">
             <div class="name">Vikram Dere</div>
-            <div class="role">243 reviews in Satara</div>
+            <div class="role">243 reviews &middot; Maharashtra</div>
             <div class="google-badge"><i class="fab fa-google" style="color:#4285F4"></i> Google Review</div>
           </div>
         </div>
@@ -300,22 +304,10 @@
       <h2>Need a Specific Chemical or Product?</h2>
       <p>Fill the form and our team will respond within a few hours with availability and pricing. You can also reach us directly.</p>
       <div class="contact-info-list">
-        <div class="contact-info-item">
-          <div class="ci-icon"><i class="fas fa-phone"></i></div>
-          <div class="ci-body"><label>Phone</label><span>094238 63434</span></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
-          <div class="ci-body"><label>WhatsApp</label><span>094238 63434</span></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="ci-body"><label>Office</label><span>Dattachhaya Housing Society, Shahupuri, Satara – 415002</span></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="ci-icon"><i class="fas fa-clock"></i></div>
-          <div class="ci-body"><label>Hours</label><span>Monday – Saturday · 10 AM to 6 PM</span></div>
-        </div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fas fa-phone"></i></div><div class="ci-body"><label>Phone</label><span>094238 63434</span></div></div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fab fa-whatsapp"></i></div><div class="ci-body"><label>WhatsApp</label><span>094238 63434</span></div></div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><div class="ci-body"><label>Office</label><span>Dattachhaya Housing Society, Shahupuri, Satara – 415002</span></div></div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fas fa-clock"></i></div><div class="ci-body"><label>Hours</label><span>Monday – Saturday · 10 AM to 6 PM</span></div></div>
       </div>
     </div>
     <div class="enquiry-form-card">
@@ -337,7 +329,7 @@
             <option>Pharma Products / APIs</option>
             <option>Scientific Instruments</option>
             <option>Lab Glassware</option>
-            <option>Consumables & Plasticware</option>
+            <option>Consumables &amp; Plasticware</option>
             <option>Bulk / Custom Order</option>
             <option>Other</option>
           </select>
@@ -366,7 +358,6 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -375,58 +366,31 @@
           <div class="logo-mark">RA</div>
           <div class="logo-info">
             <span class="logo-name" style="color:#fff;">Rajendra Agencies</span>
-            <span class="logo-tagline">Satara, Maharashtra</span>
+            <span class="logo-tagline">Maharashtra</span>
           </div>
         </div>
-        <p class="footer-brand-text">Your one-stop solution for lab chemicals, pharma products and scientific instruments in Satara and across Maharashtra.</p>
+        <p class="footer-brand-text">Your one-stop solution for lab chemicals, pharma products and scientific instruments across Maharashtra.</p>
         <div class="footer-socials">
-          <a href="https://wa.me/919423863434" class="fsocial" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="tel:+919423863434" class="fsocial" title="Call Us"><i class="fas fa-phone"></i></a>
-          <a href="https://maps.google.com/?q=Dattachhaya+Housing+Society+Shahupuri+Satara" class="fsocial" target="_blank" title="Find on Maps"><i class="fas fa-map-marker-alt"></i></a>
+          <a href="https://wa.me/919423863434" class="fsocial" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+919423863434" class="fsocial"><i class="fas fa-phone"></i></a>
+          <a href="https://maps.google.com/?q=Dattachhaya+Housing+Society+Shahupuri+Satara" class="fsocial" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h5>Navigation</h5>
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-          <li><a href="products.html"><i class="fas fa-boxes-stacked"></i> Products</a></li>
-          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Products</h5>
-        <ul>
-          <li><a href="products.html#chemicals">Lab Chemicals</a></li>
-          <li><a href="products.html#pharma">Pharma Products</a></li>
-          <li><a href="products.html#instruments">Instruments</a></li>
-          <li><a href="products.html#glassware">Glassware</a></li>
-          <li><a href="products.html#consumables">Consumables</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="tel:+919423863434">📞 094238 63434</a></li>
-          <li><a href="https://wa.me/919423863434">💬 WhatsApp</a></li>
-          <li><a href="#">📍 Shahupuri, Satara</a></li>
-          <li><a href="#">🕐 Mon–Sat · 10AM–6PM</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html"><i class="fas fa-home"></i> Home</a></li><li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li><li><a href="products.html"><i class="fas fa-boxes-stacked"></i> Products</a></li><li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li></ul></div>
+      <div class="footer-col"><h5>Products</h5><ul><li><a href="products.html#chemicals">Lab Chemicals</a></li><li><a href="products.html#pharma">Pharma Products</a></li><li><a href="products.html#instruments">Instruments</a></li><li><a href="products.html#glassware">Glassware</a></li><li><a href="products.html#consumables">Consumables</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:+919423863434">📞 094238 63434</a></li><li><a href="https://wa.me/919423863434">💬 WhatsApp</a></li><li><a href="#">📍 Shahupuri, Satara</a></li><li><a href="#">🕐 Mon–Sat · 10AM–6PM</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Rajendra Agencies, Satara. All rights reserved.</p>
+      <p>© 2025 Rajendra Agencies. All rights reserved.</p>
       <p>Dattachhaya Housing Society, Shahupuri, Satara – 415002</p>
     </div>
   </div>
 </footer>
 
-<!-- WhatsApp Float -->
 <a href="https://wa.me/919423863434?text=Hello%2C+I+need+information+about+your+products." class="wa-float" target="_blank">
   <div class="wa-pulse"></div>
   <div class="wa-badge">1</div>
   <i class="fab fa-whatsapp"></i>
 </a>
-
 <script src="js/main.js"></script>
 </body></html>
